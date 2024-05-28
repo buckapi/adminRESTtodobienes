@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+.form-label{
+    font-family: Nunito;
+    // color:darkblue;
+}
+tr:hover {
+    // font-size: 16px; /* Tamaño de la fuente aumenta a 16px al pasar el mouse por encima */
+    font-weight: bold; /* La fuente se pone en negrita al pasar el mouse por encima */
+    color:#ff8226 !important;
+  }
+  .custom-select {
+    appearance: none; /* Quita el estilo predeterminado del select */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding-right: 20px; /* Añade espacio para la imagen de la flecha hacia abajo */
+    border: none; /* Quita el borde */
+    border-radius: 0; /* Quita el borde redondeado */
+    padding: 5px; /* Ajusta el relleno según tus preferencias */
+    /* Otros estilos personalizados */
+  }
+  .my-pagination ::ng-deep .ngx-pagination .current {
+    background: #ff8226;
+  }

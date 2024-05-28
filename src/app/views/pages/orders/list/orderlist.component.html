@@ -1,0 +1,71 @@
+<nav class="page-breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink=".">Ordenes de compra</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Listado</li>
+  </ol>
+</nav>
+<div class="row">
+  <div class="col-lg-12 grid-margin stretch-card"[hidden]="orders$.length<1">
+    <div class="card">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table ">
+            <thead>
+              <tr>
+                <th>Nro de orden</th>
+                <th>Descripcion</th>
+                <th>Monto de la compra</th>
+                <th>Email</th>
+                <th>Nombre</th>
+                <th></th>
+                <!-- <th>Precio</th>
+                <th>Stock</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor='let order of _butler.orders; let i = index'  style="cursor: pointer;" routerLink="../orderdetail"  (click)="setorder(order)">
+                <td>{{order.orderNumber}}</td>
+                <td>
+                    <span *ngFor='let car of order.car; let i = index' >
+                      {{car.name}} 
+                    </span>
+                    <span>
+
+                    </span>
+               </td>
+               <td>$ CLP {{order.amount | number :'1.0'}}</td>
+               <td>   {{order.email}}</td>
+                <td>{{order.customer.name}}</td>
+                <td>
+                  <button  [swal]="
+                  {title: '<strong>Borrar orden de compra <u></u></strong>', icon: 'error',
+                  html: 'Confirma que desea eliminar esta orden de compra?',
+                  showCloseButton: true,
+                  showCancelButton: true,
+                  cancelButtonColor: '#101554',
+                  confirmButtonColor: '#ff3366',
+                  focusConfirm: true,
+                  confirmButtonText:' Si, estoy seguro',
+                  confirmButtonAriaLabel: 'Thumbs up, great!',
+                  cancelButtonText: ' Cancelar',
+                  cancelButtonAriaLabel: 'Thumbs down'
+                  }"
+                  (confirm)="deleteOrder(i)"
+                  (dismiss)="cancelDeleteOrder()"
+                  class="btn btn-danger btn-xs" style="margin-right:10%;">
+                  <i class="feather icon-trash"></i>
+                </button>
+                </td>
+                <!-- <td>{{order.car.}}</td>
+                <td>{{order.stock}}</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12 grid-margin stretch-card" [hidden]="orders$.length>0">
+    Nada que mostrar aun
+    </div>
+</div>
