@@ -2,7 +2,7 @@ import { MenuItem } from './menu.model';
 
 export const MENU: MenuItem[] = [
   {
-    label: 'Miembros',
+    label: 'Agentes',
     isTitle: true
   },
   {
@@ -19,17 +19,17 @@ export const MENU: MenuItem[] = [
   //     text: '2',
   //   }
   // },
-  {
+  /* {
     label: 'Autopartes',
     isTitle: true
-  },
-    {
+  }, */
+  /*   {
     label: 'Inventario',
     icon: 'package',
     link: '/parts/partslist',
-  },
+  }, */
   {
-    label: 'Vehículos',
+    label: 'Propiedades',
     isTitle: true
   },
   {
@@ -51,14 +51,14 @@ export const MENU: MenuItem[] = [
     icon: 'shopping-cart',
     link: '/orders/orderlist',
   },
-  {
+ /*  {
     label: 'Centro de soporte',
     isTitle: true
-  },
-  {
+  }, */
+ /*  {
     label: 'Chat',
     icon: 'headphones',
     link: '/support/chat',
-  },
+  }, */
   
 ];

@@ -11,7 +11,7 @@
         <div class="card">
           <div class="card-body">
             <div class="d-flex justify-content-between align-items-baseline">
-              <h6 class="card-title mb-0">Miembros</h6>
+              <h6 class="card-title mb-0">Agentes</h6>
               <!-- <div ngbDropdown class="mb-2">
                 <button ngbDropdownToggle class="btn p-0 no-dropdown-toggle-icon" type="button" id="dropdownMenuButton">
                   <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal" appFeatherIcon></i>
@@ -88,12 +88,12 @@
       </div>
       
       
-      <div class="col-md-3 grid-margin stretch-card" [routerLink]="['/parts/partslist']" style="cursor:pointer;">
+      <!-- <div class="col-md-3 grid-margin stretch-card" [routerLink]="['/parts/partslist']" style="cursor:pointer;">
         <div class="card">
           <div class="card-body">
             <div class="d-flex justify-content-between align-items-baseline">
               <h6 class="card-title mb-0">Autopartes</h6>
-              <!-- <div ngbDropdown class="mb-2">
+              <div ngbDropdown class="mb-2">
                 <button ngbDropdownToggle class="btn p-0 no-dropdown-toggle-icon" type="button" id="dropdownMenuButton2">
                   <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal" appFeatherIcon></i>
                 </button>
@@ -104,16 +104,16 @@
                   <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="printer" appFeatherIcon class="icon-sm me-2"></i> <span class="">Print</span></a>
                   <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="download" appFeatherIcon class="icon-sm me-2"></i> <span class="">Download</span></a>
                 </div>
-              </div> -->
+              </div> 
             </div>
             <div class="row">
               <div class="col-6 col-md-12 col-xl-5">
                 <h3 class="mb-2">{{_butler.partsSize}}</h3>
                 <div class="d-flex align-items-baseline">
-                  <!-- <p class="text-info">
+                  <p class="text-info">
                     <span>+ 28 </span>
                     <i data-feather="arrow-up" appFeatherIcon class="icon-sm mb-1"></i>
-                  </p> -->
+                  </p> 
                 </div>
               </div>
               <div class="col-6 col-md-12 col-xl-7">
@@ -126,12 +126,12 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="col-md-3 grid-margin stretch-card" [routerLink]="['/cars/carslist']" style="cursor:pointer;">
         <div class="card">
           <div class="card-body">
             <div class="d-flex justify-content-between align-items-baseline">
-              <h6 class="card-title mb-0">Vehículos </h6>
+              <h6 class="card-title mb-0">Propiedades </h6>
               <!-- <div ngbDropdown class="mb-2">
                 <button ngbDropdownToggle class="btn p-0 no-dropdown-toggle-icon" type="button" id="dropdownMenuButton2">
                   <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal" appFeatherIcon></i>
@@ -210,24 +210,13 @@
 </div> 
 
 
-<div class="row"  [hidden]="_butler.type!='admin'">
+<!-- <div class="row"  [hidden]="_butler.type!='admin'">
   <div class="col-lg-7 col-xl-7 grid-margin stretch-card" >
     <div class="card">
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-baseline mb-2">
           <h6 class="card-title mb-0">Visitas mensuales</h6>
-          <!-- <div ngbDropdown class="mb-2">
-            <button ngbDropdownToggle class="btn p-0 no-dropdown-toggle-icon" type="button" id="dropdownMenuButton4">
-              <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal" appFeatherIcon></i>
-            </button>
-            <div ngbDropdownMenu aria-labelledby="dropdownMenuButton4">
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="eye" appFeatherIcon class="icon-sm me-2"></i> <span class="">View</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="edit-2" appFeatherIcon class="icon-sm me-2"></i> <span class="">Edit</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="trash" appFeatherIcon class="icon-sm me-2"></i> <span class="">Delete</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="printer" appFeatherIcon class="icon-sm me-2"></i> <span class="">Print</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="download" appFeatherIcon class="icon-sm me-2"></i> <span class="">Download</span></a>
-            </div>
-          </div> -->
+        
         </div>
         <p class="text-muted" >fuente: 
           <a href="https://analytics.google.com/analytics/web/?authuser=3#/p375779306/reports/reportinghub?params=_u..nav%3Dmaui%26_u.comparisonOption%3Ddisabled%26_u.dateOption%3Dlast12Months" target="new">
@@ -256,18 +245,7 @@
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-baseline mb-2">
           <h6 class="card-title mb-0">Agregados recientemente ...</h6>
-          <!-- <div ngbDropdown class="mb-2">
-            <button ngbDropdownToggle class="btn p-0 no-dropdown-toggle-icon" type="button" id="dropdownMenuButton6">
-              <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal" appFeatherIcon></i>
-            </button>
-            <div ngbDropdownMenu aria-labelledby="dropdownMenuButton6">
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="eye" appFeatherIcon class="icon-sm me-2"></i> <span class="">View</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="edit-2" appFeatherIcon class="icon-sm me-2"></i> <span class="">Edit</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="trash" appFeatherIcon class="icon-sm me-2"></i> <span class="">Delete</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="printer" appFeatherIcon class="icon-sm me-2"></i> <span class="">Print</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="download" appFeatherIcon class="icon-sm me-2"></i> <span class="">Download</span></a>
-            </div>
-          </div> -->
+        
         </div>
         <div class="d-flex flex-column">
           <span [hidden]="!loading">Cargando ... </span>
@@ -280,9 +258,9 @@
             <div class="w-100" [hidden]="i>4">
               <div class="d-flex justify-content-between">
                 <h6 class="text-body mb-2">{{product.name}} </h6>
-                <!-- <p class="text-muted tx-12">12.30 PM</p> -->
+                
               </div>
-              <!-- <p class="text-muted tx-13">{{product.description}}</p> -->
+            
             </div>
           </a>
    
@@ -295,22 +273,11 @@
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-baseline mb-2">
           <h6 class="card-title mb-0">Mas vistos ...</h6>
-          <!-- <div ngbDropdown class="mb-2">
-            <button ngbDropdownToggle class="btn p-0 no-dropdown-toggle-icon" type="button" id="dropdownMenuButton6">
-              <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal" appFeatherIcon></i>
-            </button>
-            <div ngbDropdownMenu aria-labelledby="dropdownMenuButton6">
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="eye" appFeatherIcon class="icon-sm me-2"></i> <span class="">View</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="edit-2" appFeatherIcon class="icon-sm me-2"></i> <span class="">Edit</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="trash" appFeatherIcon class="icon-sm me-2"></i> <span class="">Delete</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="printer" appFeatherIcon class="icon-sm me-2"></i> <span class="">Print</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="download" appFeatherIcon class="icon-sm me-2"></i> <span class="">Download</span></a>
-            </div>
-          </div> -->
+          
         </div>
         <div class="d-flex flex-column">
       <span style="font-size: 10px;  color: #ff3366;" > 🔒 Module temporarily unavailable</span>
-          <!--  -->
+          
    
         </div>
       </div>
@@ -325,18 +292,7 @@
           <div class="card-body">
             <div class="d-flex justify-content-between align-items-baseline">
               <h6 class="card-title mb-0">Clientes</h6>
-              <!-- <div ngbDropdown class="mb-2">
-                <button ngbDropdownToggle class="btn p-0 no-dropdown-toggle-icon" type="button" id="dropdownMenuButton1">
-                  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal" appFeatherIcon></i>
-                </button>
-                <div ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="eye" appFeatherIcon class="icon-sm me-2"></i> <span class="">View</span></a>
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="edit-2" appFeatherIcon class="icon-sm me-2"></i> <span class="">Edit</span></a>
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="trash" appFeatherIcon class="icon-sm me-2"></i> <span class="">Delete</span></a>
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="printer" appFeatherIcon class="icon-sm me-2"></i> <span class="">Print</span></a>
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="download" appFeatherIcon class="icon-sm me-2"></i> <span class="">Download</span></a>
-                </div>
-              </div> -->
+              
             </div>
             <div class="row">
               <div class="col-6 col-md-12 col-xl-5">
@@ -364,18 +320,7 @@
           <div class="card-body">
             <div class="d-flex justify-content-between align-items-baseline">
               <h6 class="card-title mb-0">Autopartes</h6>
-              <!-- <div ngbDropdown class="mb-2">
-                <button ngbDropdownToggle class="btn p-0 no-dropdown-toggle-icon" type="button" id="dropdownMenuButton2">
-                  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal" appFeatherIcon></i>
-                </button>
-                <div ngbDropdownMenu aria-labelledby="dropdownMenuButton2">
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="eye" appFeatherIcon class="icon-sm me-2"></i> <span class="">View</span></a>
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="edit-2" appFeatherIcon class="icon-sm me-2"></i> <span class="">Edit</span></a>
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="trash" appFeatherIcon class="icon-sm me-2"></i> <span class="">Delete</span></a>
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="printer" appFeatherIcon class="icon-sm me-2"></i> <span class="">Print</span></a>
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="download" appFeatherIcon class="icon-sm me-2"></i> <span class="">Download</span></a>
-                </div>
-              </div> -->
+              
             </div>
             <div class="row">
               <div class="col-6 col-md-12 col-xl-5">
@@ -403,18 +348,7 @@
           <div class="card-body">
             <div class="d-flex justify-content-between align-items-baseline">
               <h6 class="card-title mb-0">Vehículos</h6>
-              <!-- <div ngbDropdown class="mb-2">
-                <button ngbDropdownToggle class="btn p-0 no-dropdown-toggle-icon" type="button" id="dropdownMenuButton2">
-                  <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal" appFeatherIcon></i>
-                </button>
-                <div ngbDropdownMenu aria-labelledby="dropdownMenuButton2">
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="eye" appFeatherIcon class="icon-sm me-2"></i> <span class="">View</span></a>
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="edit-2" appFeatherIcon class="icon-sm me-2"></i> <span class="">Edit</span></a>
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="trash" appFeatherIcon class="icon-sm me-2"></i> <span class="">Delete</span></a>
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="printer" appFeatherIcon class="icon-sm me-2"></i> <span class="">Print</span></a>
-                  <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="download" appFeatherIcon class="icon-sm me-2"></i> <span class="">Download</span></a>
-                </div>
-              </div> -->
+              
             </div>
             <div class="row">
               <div class="col-6 col-md-12 col-xl-5">
@@ -444,18 +378,7 @@
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-baseline mb-2">
           <h6 class="card-title mb-0">Ordenes de compra</h6>
-          <!-- <div ngbDropdown class="mb-2">
-            <button ngbDropdownToggle class="btn p-0 no-dropdown-toggle-icon" type="button" id="dropdownMenuButton6">
-              <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal" appFeatherIcon></i>
-            </button>
-            <div ngbDropdownMenu aria-labelledby="dropdownMenuButton6">
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="eye" appFeatherIcon class="icon-sm me-2"></i> <span class="">View</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="edit-2" appFeatherIcon class="icon-sm me-2"></i> <span class="">Edit</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="trash" appFeatherIcon class="icon-sm me-2"></i> <span class="">Delete</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="printer" appFeatherIcon class="icon-sm me-2"></i> <span class="">Print</span></a>
-              <a ngbDropdownItem class="d-flex align-items-center" href="" (click)="false"><i data-feather="download" appFeatherIcon class="icon-sm me-2"></i> <span class="">Download</span></a>
-            </div>
-          </div> -->
+         
         </div>
         <div class="d-flex flex-column">
           <a href="" (click)="false" class="d-flex align-items-center border-bottom pb-3">
@@ -475,8 +398,8 @@
       </div>
     </div>
   </div>
-</div> 
-<div class="row"   [hidden]="_butler.type!='member'">
+</div>  -->
+<!-- <div class="row"   [hidden]="_butler.type!='member'">
   <div class="col-md-6">
     <div class="col-lg-12 "  >
       <div class="row flex-grow-1">      
@@ -535,58 +458,11 @@
           </div>
           <div class="d-flex flex-column">
             Nada que mostrar aun
-           <!--  <a href="" (click)="false" class="d-flex align-items-center border-bottom pb-3">
-              <div class="me-3">
-                <img src="https://via.placeholder.com/35x35" class="rounded-circle wd-35" alt="user">
-              </div>
-              <div class="w-100">
-                <div class="d-flex justify-content-between">
-                  <h6 class="text-body mb-2">Hylus doble C</h6>
-                  <p class="text-muted tx-12">12.30 PM</p>
-                </div>
-                <p class="text-muted tx-13">Hey! there I'm available...</p>
-              </div>
-            </a>
-            <a href="" (click)="false" class="d-flex align-items-center border-bottom pb-3">
-              <div class="me-3">
-                <img src="https://via.placeholder.com/35x35" class="rounded-circle wd-35" alt="user">
-              </div>
-              <div class="w-100">
-                <div class="d-flex justify-content-between">
-                  <h6 class="text-body mb-2">Hylus doble C</h6>
-                  <p class="text-muted tx-12">12.30 PM</p>
-                </div>
-                <p class="text-muted tx-13">Hey! there I'm available...</p>
-              </div>
-            </a>
-            <a href="" (click)="false" class="d-flex align-items-center border-bottom pb-3">
-              <div class="me-3">
-                <img src="https://via.placeholder.com/35x35" class="rounded-circle wd-35" alt="user">
-              </div>
-              <div class="w-100">
-                <div class="d-flex justify-content-between">
-                  <h6 class="text-body mb-2">Hylus doble C</h6>
-                  <p class="text-muted tx-12">12.30 PM</p>
-                </div>
-                <p class="text-muted tx-13">Hey! there I'm available...</p>
-              </div>
-            </a>
-            <a href="" (click)="false" class="d-flex align-items-center border-bottom pb-3">
-              <div class="me-3">
-                <img src="https://via.placeholder.com/35x35" class="rounded-circle wd-35" alt="user">
-              </div>
-              <div class="w-100">
-                <div class="d-flex justify-content-between">
-                  <h6 class="text-body mb-2">Hylus doble C</h6>
-                  <p class="text-muted tx-12">12.30 PM</p>
-                </div>
-                <p class="text-muted tx-13">Hey! there I'm available...</p>
-              </div>
-            </a> -->
+          
           
           </div>
         </div>
       </div>
     </div>
   </div>
-</div> 
+</div> --> 
